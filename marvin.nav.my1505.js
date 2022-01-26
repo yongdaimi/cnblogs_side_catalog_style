@@ -22,14 +22,16 @@ a.ready(function () {
     };
     b.append(i);
     o = s.find(':header');
-    if (o.length > p) {
+	
+	/* 显示所有的标题，避免h1, h2的总个数超过了18，就只显示h1或h2 */
+/*     if (o.length > p) {
         r = false;
         var t = s.find('h1');
         var u = s.find('h2');
         if (t.length + u.length > p) {
             q = false
         }
-    };
+    }; */
 	
     o.each(function (t) {
         var u = $(this),

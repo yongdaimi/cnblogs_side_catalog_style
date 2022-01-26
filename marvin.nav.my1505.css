@@ -34,7 +34,8 @@
 #sideCatalog-catalog {
 	height: 325px;
 	padding-top: 18px;
-	overflow: hidden;
+	overflow-y: auto;			/*Y轴超出div范围后自动显示垂直滚动条*/
+	overflow-x: hidden;			/*X轴永远不显示滚动条*/
 	padding-left: 23px;
 	position: relative
 }
