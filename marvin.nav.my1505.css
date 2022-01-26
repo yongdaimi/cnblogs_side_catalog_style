@@ -79,13 +79,14 @@
 	font-weight: bold;
 	padding-right: 5px
 }
-/*这里比较重要，设置h2级别目录的缩进和左边距*/ 
-#sideCatalog li.h2Offset {
+/* 默认侧边栏目录从h2开始显示，h2不设置填充 */
+/*这里比较重要，设置h3级别目录的缩进和左边距*/ 
+#sideCatalog li.h3Offset {
 	padding-left: 45px;
 	text-indent: -25px
 }
-/*这里比较重要，设置h3级别目录的缩进和左边距*/ 
-#sideCatalog li.h3Offset {
+/*这里比较重要，设置h4级别目录的缩进和左边距*/ 
+#sideCatalog li.h4Offset {
 	padding-left: 90px;
 	text-indent: -50px
 }

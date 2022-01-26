@@ -49,22 +49,22 @@ a.ready(function () {
 
         u.attr('id', 'autoid-' + l + '-' + m + '-' + n)
 		
-        if (v.localName === 'h1') {
+        if (v.localName === 'h2') {
             l++;
             m = 0;
             if(text.length>30) text=text.substr(0,30)+"...";
                 j += '<li><a href="#' + u.attr('id') + '" title="' + title + '">' + text + '</a><span class="sideCatalog-dot"></span></li>';
-        } else if (v.localName === 'h2') {
+        } else if (v.localName === 'h3') {
             m++;
             n = 0;
             if(q){
 	            if(text.length>28) text=text.substr(0,28)+"...";
-	            j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + text + '</a></li>';
+	            j += '<li class="h3Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + text + '</a></li>';
         	}
-        }else if (v.localName === 'h3') {
+        }else if (v.localName === 'h4') {
             n++;
             if(r){
-            	j += '<li class="h3Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + u.text() + '</a></li>';
+            	j += '<li class="h4Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + u.text() + '</a></li>';
         	}
         }
     });
