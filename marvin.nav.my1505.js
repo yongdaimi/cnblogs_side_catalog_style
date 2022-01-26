@@ -20,6 +20,13 @@ a.ready(function () {
     if (s.length === 0) {
         return
     };
+	
+	/* 查找当前页面h2标题的数量，如果小于2，则不显示侧边导航(默认博客的副标题也是h2) */
+	var t = s.find('h2');
+	if (t.length < 2) {
+		return
+	};
+	
     b.append(i);
     o = s.find(':header');
 	
